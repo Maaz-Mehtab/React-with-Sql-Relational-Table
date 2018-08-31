@@ -1,0 +1,26 @@
+{
+  "name": "sqlexpress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Maaz",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^3.6.1",
+    "cors": "^2.8.4",
+    "create-react-app": "^1.5.2",
+    "express": "^4.16.3",
+    "mysql": "^2.16.0",
+    "sql": "^0.78.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  }
+}
